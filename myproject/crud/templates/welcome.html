@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CRUD App</title>
+</head>
+<body>
+    <h1>Welcome to CRUD App</h1>
+    <p>This is a basic CRUD application built using Django.</p>
+    <p>Use the following routes to interact with the app:</p>
+    <ul>
+        <li><a href="{% url 'create' %}">Create</a></li>
+        <li><a href="{% url 'read' %}">Read</a></li>
+        <li><a href="{% url 'update' %}">Update</a></li>
+        <li><a href="{% url 'delete' %}">Delete</a></li>
+    </ul>
+</body>
+</html>

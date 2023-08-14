@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Data</title>
+</head>
+<body>
+    <h1>Read Data</h1>
+    <ul>
+        {% for key, value in data_storage.items %}
+            <li>{{ key }}: {{ value }}</li>
+        {% empty %}
+            <li>No data available</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create' %}">Create Data</a>
+    <a href="{% url 'update' %}">Update Data</a>
+    <a href="{% url 'delete' %}">Delete Data</a>
+</body>
+</html>
